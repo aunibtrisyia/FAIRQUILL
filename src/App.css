@@ -570,3 +570,42 @@ button {
     min-height: 65px;
   }
 }
+
+/* REGISTRATION PAGE */
+
+.lecturer-notice {
+  margin-top: 4px;
+  padding: 13px;
+  border: 1px solid #e2ddff;
+  border-radius: 9px;
+  background: #f7f5ff;
+}
+
+.lecturer-notice strong {
+  display: block;
+  color: #5d4bb6;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.lecturer-notice p {
+  color: #7b759c;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.register-section {
+  flex-wrap: wrap;
+}
+
+.form-section {
+  overflow-y: auto;
+}
+
+@media (max-width: 650px) {
+  .form-section {
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
