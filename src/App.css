@@ -1,0 +1,572 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #172b4d;
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login-page {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* BRANDING SECTION */
+
+.brand-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(145deg, #132747, #1d3763 60%, #273d70);
+  color: white;
+  padding: 55px 9%;
+}
+
+.brand-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 510px;
+  margin: auto;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #a99aff, #7566df);
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  box-shadow: 0 7px 20px rgba(126, 105, 238, 0.3);
+}
+
+.logo-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo-name span {
+  color: #aaa0ff;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.brand-message {
+  margin-top: 115px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #c0baff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 26px;
+}
+
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a99aff;
+  box-shadow: 0 0 12px #a99aff;
+}
+
+.brand-message h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(34px, 3.6vw, 53px);
+  line-height: 1.18;
+  letter-spacing: -2px;
+  font-weight: 800;
+}
+
+.brand-message h1 span {
+  color: #b5aaff;
+}
+
+.brand-message > p {
+  max-width: 390px;
+  margin-top: 22px;
+  color: #c4cee0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 49px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 12px;
+  background: rgba(177, 164, 255, 0.13);
+  color: #c2b8ff;
+  font-size: 19px;
+  border: 1px solid rgba(177, 164, 255, 0.15);
+}
+
+.feature-item strong {
+  display: block;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.feature-item small {
+  display: block;
+  margin-top: 5px;
+  color: #aab8ce;
+  font-size: 11px;
+}
+
+.brand-footer {
+  margin-top: 100px;
+  color: #8494ae;
+  font-size: 11px;
+}
+
+.decor-circle {
+  position: absolute;
+  border: 1px solid rgba(185, 173, 255, 0.11);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.circle-one {
+  width: 390px;
+  height: 390px;
+  top: -190px;
+  right: -190px;
+}
+
+.circle-two {
+  width: 480px;
+  height: 480px;
+  bottom: -300px;
+  left: -210px;
+}
+
+/* LOGIN SECTION */
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 8%;
+  background: #ffffff;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 425px;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.login-heading {
+  margin-bottom: 34px;
+}
+
+.welcome-label {
+  color: #8879e7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.login-heading h2 {
+  color: #182b4a;
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.login-heading p {
+  margin-top: 10px;
+  color: #8490a4;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ROLE SELECTION */
+
+.role-label {
+  color: #263954;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 27px;
+}
+
+.role-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 14px 11px;
+  min-height: 73px;
+  border: 1px solid #e7eaf1;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #273a59;
+  transition: all 0.2s ease;
+}
+
+.role-option:hover {
+  border-color: #a99aff;
+  background: #faf9ff;
+}
+
+.role-option.active {
+  background: #f4f2ff;
+  border: 1.5px solid #8879e7;
+  box-shadow: 0 3px 12px rgba(119, 103, 220, 0.08);
+}
+
+.role-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #edf0f8;
+  color: #435a85;
+  font-size: 19px;
+}
+
+.active .role-symbol {
+  background: #e4e0ff;
+  color: #6555c9;
+}
+
+.role-text strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.role-text small {
+  display: block;
+  margin-top: 4px;
+  color: #8490a4;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.role-check {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  color: #7967dc;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* FORM INPUTS */
+
+.input-group {
+  margin-bottom: 21px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #263954;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  height: 49px;
+  border: 1px solid #e3e7ef;
+  border-radius: 9px;
+  padding: 0 13px;
+  transition: all 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: #8979e8;
+  box-shadow: 0 0 0 3px rgba(137, 121, 232, 0.1);
+}
+
+.input-icon {
+  margin-right: 11px;
+  color: #929bb0;
+  font-size: 16px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #243754;
+  font-size: 12px;
+}
+
+.input-wrapper input::placeholder {
+  color: #a5adbd;
+}
+
+.password-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-link {
+  border: none;
+  background: transparent;
+  color: #7665d7;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  color: #5140b6;
+  text-decoration: underline;
+}
+
+.password-toggle {
+  border: none;
+  background: transparent;
+  color: #7968d9;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+/* SIGN IN BUTTON */
+
+.sign-in-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 49px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #263e69, #6558b9);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(48, 59, 120, 0.15);
+  transition: all 0.2s ease;
+}
+
+.sign-in-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 20px rgba(48, 59, 120, 0.23);
+}
+
+.sign-in-button span {
+  font-size: 17px;
+}
+
+.feedback-message {
+  margin-top: 17px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0efff;
+  color: #5546a5;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.register-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 26px;
+  color: #8490a4;
+  font-size: 11px;
+}
+
+.register-link {
+  font-size: 11px;
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 35px;
+}
+
+.login-divider span {
+  flex: 1;
+  height: 1px;
+  background: #edf0f5;
+}
+
+.login-divider small {
+  color: #a4adbd;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.security-note {
+  margin-top: 18px;
+  text-align: center;
+  color: #9aa4b4;
+  font-size: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .login-page {
+    grid-template-columns: 40% 60%;
+  }
+
+  .brand-section {
+    padding: 40px 8%;
+  }
+
+  .brand-message {
+    margin-top: 75px;
+  }
+
+  .brand-message h1 {
+    font-size: 37px;
+  }
+
+  .form-section {
+    padding: 40px 6%;
+  }
+
+  .role-option {
+    gap: 7px;
+    padding: 11px 8px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-page {
+    display: block;
+    min-height: 100vh;
+  }
+
+  .brand-section {
+    display: none;
+  }
+
+  .form-section {
+    min-height: 100vh;
+    padding: 35px 22px;
+  }
+
+  .login-container {
+    max-width: 430px;
+    margin: auto;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+  }
+
+  .mobile-logo .logo-name {
+    color: #1b3053;
+  }
+
+  .login-heading h2 {
+    font-size: 25px;
+  }
+
+  .role-option {
+    padding: 13px 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .role-selector {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-logo {
+    margin-bottom: 40px;
+  }
+
+  .role-option {
+    min-height: 65px;
+  }
+}
